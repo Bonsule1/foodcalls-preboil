@@ -126,8 +126,9 @@ def main():
         if boiled:
             total_now += avg_b
             total_suggest += suggest
+        fmt = lambda x: "-" if math.isnan(x) else f"{x:.1f}"
         print(f"{item:<12}{slot:<9}{len(g):>5}{sum(sold)/len(sold):>10.1f}"
-              f"{avg_b:>12.1f}{avg_t:>12.1f}{suggest:>9}")
+              f"{fmt(avg_b):>12}{fmt(avg_t):>12}{suggest:>9}")
 
     print("-" * 69)
     if total_now:
