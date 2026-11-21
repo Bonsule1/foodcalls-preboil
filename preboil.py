@@ -66,6 +66,7 @@ def load(path):
                 # Possible: they boiled a second batch mid-slot. Keep it, but warn.
                 skipped.append((line_no, f"sold ({sold:g}) > boiled ({boiled:g}) - kept, check it"))
             rows.append({
+                "source": (raw.get("source") or "").strip() or "unknown",
                 "date": raw["date"].strip(),
                 "slot": raw["slot"].strip(),
                 "item": raw["item"].strip().lower(),
@@ -104,7 +105,11 @@ def main():
         groups[(r["item"], r["slot"])].append(r)
 
     print(f"Pre-boil plan from {len(rows)} rows "
-          f"(cover {args.cover:.0%} of days, +{args.buffer} buffer)\n")
+          f"(cover {args.cover:.0%} of days, +{args.buffer} buffer)")
+    by_source = defaultdict(int)
+    for r in rows:
+        by_source[r["source"]] += 1
+    print("Rows by source: " + ", ".join(f"{k}={v}" for k, v in sorted(by_source.items())) + "\n")
     print(f"{'item':<12}{'slot':<9}{'days':>5}{'avg sold':>10}{'avg boiled':>12}"
           f"{'avg thrown':>12}{'SUGGEST':>9}")
     print("-" * 69)
