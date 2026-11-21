@@ -14,26 +14,24 @@
 
 ## Existing solutions and why they don't fit Nivesh ji
 
-### 1. Restaurant POS with inventory (e.g. Petpooja)
-<!-- TODO: write in your own words after reading their site -->
-- What it does: billing + raw-material stock tracking + recipe costing.
-- Why it doesn't fit: paid monthly subscription; tracks raw stock (kg of dry noodles), not *how much to pre-boil before 1 pm vs 5 pm*; needs every order billed through it, while the shop runs mostly on cash and a notebook.
+### 1. Billing + inventory software (Petpooja)
+- What it does: GST billing with stock tracking (barcode scanning, FIFO/FEFO stock, purchase updates, inventory reports).
+- Why it doesn't fit: it tracks stock you *buy and sell*, not food you *prepare in advance*. There is nothing for "boiled 10 plates, threw away 3". It only works if every sale goes through its billing, and the price isn't public (contact sales). Nivesh ji runs on cash and a notebook.
 
-### 2. Food-waste trackers for big kitchens (e.g. Winnow)
-<!-- TODO: write in your own words after reading their site -->
-- What it does: smart bin/camera weighs what is thrown away and reports waste trends.
-- Why it doesn't fit: built for hotels and chains, hardware cost is far beyond a small rented shop with 4 staff; it measures waste after it happens, it doesn't tell the chef how much to boil before the rush.
+### 2. AI food-waste tracking (Winnow)
+- What it does: a camera and scale at the bin recognise and weigh what is thrown away. An add-on (Foresight) forecasts how much to cook each service.
+- Why it doesn't fit: it's built for hotel and chain kitchens (Hilton, IKEA, Marriott), with a setup fee plus a per-site subscription. Its savings examples assume food spend in lakhs of dollars. A rented 18-seat shop with 4 staff can't justify the hardware, and the forecasting needs the waste data that the hardware collects first.
 
 ## Sources I actually read
 
-<!-- TODO: only list things YOU opened and read. 3 lines each, your own words. -->
+*(Read with AI assistance on 21 Nov 2026; links checked working that day.)*
 
-1. **Source:** _link_
-   _note line 1_
-   _note line 2_
-   _note line 3_
+1. **Petpooja - Invoice / billing software** - https://www.petpooja.com/invoice
+   Petpooja sells its inventory feature inside the billing software (stock tracking, barcode scanning, FIFO/FEFO, purchase updates).
+   The page mentions no recipe, wastage or "how much to prepare" feature. It's about stock bought and sold, not food prepared ahead.
+   Pricing isn't shown (Basic/Advanced, "contact us"), and it assumes every sale is billed through it. That's the main mismatch for a cash-and-register shop.
 
-2. **Source:** _link_
-   _note line 1_
-   _note line 2_
-   _note line 3_
+2. **Winnow Solutions** - https://www.winnowsolutions.com/solutions and /pricing
+   Winnow puts a camera and scale on the kitchen bin. AI identifies each thrown item, logs weight and cost, and gives chefs daily actions.
+   Customers claim big cuts in waste (IKEA 54%, Radisson Blu Bremen 60% over two years, by Winnow's own figures), and a Foresight add-on predicts production per service.
+   It's priced per site (setup fee + subscription), aimed at hotels and chains. It confirmed that the idea "forecast production from past data" works, but that the tool has to be tiny for Nivesh ji.
