@@ -1,0 +1,8 @@
+# Assignment brief contains the panel's scoring notes - keep it out of the public repo
+*.docx
+
+# Videos are too big for git; upload the screen recording and link it in README
+*.mp4
+
+__pycache__/
+*.pyc
