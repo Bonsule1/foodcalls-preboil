@@ -16,8 +16,6 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 
 ## What I saw (20 min at the place)
 
-<!-- TODO (you): 3-5 lines in your own words. E.g. how many tables were full, did anyone wait
-     or leave, what the kitchen looked like, how many staff were working. -->
 
 ## Conversation
 
@@ -34,11 +32,6 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 3. Prep is done in two parts, and the hard part is the sudden spike at certain times, when students come after class.
 
 **1 thing that surprised me**
-<!-- TODO (you): pick the one that actually surprised you, in your own words. Candidates from your notes:
-     - he removed items like brownie with ice cream, garlic chilli bread, samosa, paneer cutlet because they did not sell
-     - he says he doesn't worry about competition because his quality is good and prices beat the college mess/canteen
-     - Domino's charges ~100 for mineral water but he gives water free
-     - electricity bill is about 15,000 a month, mostly from the pizza oven -->
 
 ## Data (`data.csv`)
 

@@ -79,4 +79,3 @@ Reading it: before 5 pm, boil about 9 plates of noodles and 6 of pasta. For the 
 
 ## Demo video
 
-<!-- TODO: link your 3-minute screen recording here -->
