@@ -16,6 +16,11 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 
 ## What I saw (20 min at the place)
 
+- The shop was clean everywhere: tables, counter and the kitchen area I could see.
+- The ingredients looked fresh. Vegetables come from the mandi every day, and nothing looked stored for long.
+- The staff were polite and quick with customers. 4 people run the whole place (2 chefs, 1 waiter, 1 cleaner).
+- The seating area is small, about 18 seats, and the kitchen is tight. He said there is no room for more equipment either.
+- The shop is fairly new and most orders are walk-in. He said online orders are still low and getting the business online is important to him now.
 
 ## Conversation
 
@@ -32,6 +37,8 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 3. Prep is done in two parts, and the hard part is the sudden spike at certain times, when students come after class.
 
 **1 thing that surprised me**
+
+He isn't worried about competition at all. I expected a small new shop near a college to be worried about the mess, the canteen and the other cafes nearby. He said his quality is good and his prices beat the college mess and canteen, so students come back anyway. He also said he is a good cook himself, and that someone who can't cook well shouldn't run this kind of cafe, because you need real interest in the food. I thought a cafe was mainly a business problem (rent, staff, prices), but for him it starts with being able to cook.
 
 ## Data (`data.csv`)
 
