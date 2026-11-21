@@ -46,7 +46,7 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 
 How I built them:
 - **From Nivesh ji (what he told me on 20 Nov):** about 50-60 customers a day, and about 20 of them order noodles, Maggi or pasta. The rush is 5-8 pm, and the shop is open 10 am to 10 pm.
-- **From me:** I split those ~20 plates a day into noodles (the bigger share) and pasta, across 4 slots (10-13, 13-17, 17-20, 20-22), putting about half in the 5-8 pm rush. I varied the totals a little from day to day (16-24 plates) because he said "quantity is not fixed". The dates are the 7 days up to my visit (14-20 Nov).
+- **From me:** I split those ~20 plates a day into noodles (the bigger share) and pasta, across 3 slots (10-17, 17-20, 20-22), putting about half in the 5-8 pm rush. I varied the totals a little from day to day (19-24 plates) because he said "quantity is not fixed". The dates are the 5 weekdays up to my visit (16-20 Nov), 30 rows in total.
 - **Left blank on purpose:** `boiled_plates` and `thrown_plates`. He told me he throws boiled noodles/pasta away but didn't give amounts, and I didn't want to invent them.
 
 What would make it real: Nivesh ji (or his chef) writes 3 numbers per slot for a week (plates boiled, sold, thrown) in his register. The same script then also shows how much waste the suggestion would save.

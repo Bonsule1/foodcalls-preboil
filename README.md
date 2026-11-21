@@ -51,32 +51,30 @@ usually means a second batch was boiled.
 `python preboil.py` on the current `data.csv` (estimate rows, see below):
 
 ```
-Pre-boil plan from 56 rows (cover 75% of days, +1 buffer)
-Rows by source: estimate=56
+Pre-boil plan from 30 rows (cover 75% of days, +1 buffer)
+Rows by source: estimate=30
 
 item        slot      days  avg sold  avg boiled  avg thrown  SUGGEST
 ---------------------------------------------------------------------
-noodles     10-13        7       1.0           -           -        2
-noodles     13-17        7       2.9           -           -        4
-noodles     17-20        7       7.3           -           -        9
-noodles     20-22        7       2.0           -           -        3
-pasta       10-13        7       0.4           -           -        2
-pasta       13-17        7       1.4           -           -        3
-pasta       17-20        7       4.0           -           -        6
-pasta       20-22        7       1.3           -           -        3
+noodles     10-17        5       4.4           -           -        6
+noodles     17-20        5       7.8           -           -        9
+noodles     20-22        5       1.8           -           -        3
+pasta       10-17        5       2.0           -           -        3
+pasta       17-20        5       4.4           -           -        6
+pasta       20-22        5       1.2           -           -        2
 ---------------------------------------------------------------------
 ```
 
-Reading it: before 5 pm, boil about 9 plates of noodles and 6 of pasta. In the 10 am-5 pm slots only 2-4 are needed.
+Reading it: before 5 pm, boil about 9 plates of noodles and 6 of pasta. For the whole 10 am-5 pm stretch, 6 noodles and 3 pasta are enough.
 
 ## What it gets wrong / don't trust it for
 
-- **Too few days.** With about a week of data, one odd day (a fest, a holiday, an exam week) moves the suggestion a lot.
+- **Too few days.** With only 5 days of data, one odd day (a fest, a holiday, an exam week) moves the suggestion a lot.
 - **It doesn't know the calendar.** Exam days, holidays and weekends aren't separate unless you split them yourself.
 - **Lost sales are invisible.** If noodles ran out at 6:30, "sold" is lower than real demand, so the tool will under-suggest for that slot.
-- **The current data is an estimate, not a count.** All 56 rows are built from the owner's spoken figures (~20 noodle/pasta customers a day, rush 5-8 pm), split into slots by me. See [fieldwork.md](fieldwork.md#data-datacsv). Treat the suggestions as a starting point until real counts replace them.
+- **The current data is an estimate, not a count.** All 30 rows are built from the owner's spoken figures (~20 noodle/pasta customers a day, rush 5-8 pm), split into slots by me. See [fieldwork.md](fieldwork.md#data-datacsv). Treat the suggestions as a starting point until real counts replace them.
 - **No waste numbers yet.** `boiled_plates` and `thrown_plates` are blank, so it can't yet say how many plates would be saved.
-- **The buffer dominates small slots.** Pasta 10-13 averages 0.4 plates but gets a suggestion of 2. For tiny slots, "boil when ordered" is probably better.
+- **Slots are wide.** 10-17 is one slot, so it can't tell whether the 6 noodle plates are needed at noon or at 4 pm.
 - It only answers "how much to boil". It doesn't solve seating (18 seats) or any other problem he mentioned.
 
 ## Demo video
