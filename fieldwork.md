@@ -4,7 +4,7 @@
 
 - **Where:** FoodCalls (pizza | burger | chowmein), near IIIT Allahabad, Prayagraj
 - **When:** 20 Nov 2026, approx. 20:20 to 21:30
-- **Who:** Navesh Gupta, owner <!-- TODO: confirm spelling -->
+- **Who:** Nivesh Gupta, owner
 
 | Time | Photo |
 |---|---|
@@ -42,7 +42,11 @@ My handwritten notes from the conversation are in `photos/05` to `photos/09`.
 
 ## Data (`data.csv`)
 
-<!-- TODO: describe exactly how each row was collected, e.g.
-     "Rows marked source=counted: I sat at the corner table on <date> from <time> to <time> and wrote a line every 10 minutes.
-      Rows marked source=register: copied from the owner's daily register page (photo: photos/10_register.jpeg).
-      Rows marked source=owner_estimate: numbers he told me from memory, not counted." -->
+**These numbers are an estimate. They were not counted plate by plate.** Every row has `source=estimate`.
+
+How I built them:
+- **From Nivesh ji (what he told me on 20 Nov):** about 50-60 customers a day, and about 20 of them order noodles, Maggi or pasta. The rush is 5-8 pm, and the shop is open 10 am to 10 pm.
+- **From me:** I split those ~20 plates a day into noodles (the bigger share) and pasta, across 4 slots (10-13, 13-17, 17-20, 20-22), putting about half in the 5-8 pm rush. I varied the totals a little from day to day (16-24 plates) because he said "quantity is not fixed". The dates are the 7 days up to my visit (14-20 Nov).
+- **Left blank on purpose:** `boiled_plates` and `thrown_plates`. He told me he throws boiled noodles/pasta away but didn't give amounts, and I didn't want to invent them.
+
+What would make it real: Nivesh ji (or his chef) writes 3 numbers per slot for a week (plates boiled, sold, thrown) in his register. The same script then also shows how much waste the suggestion would save.

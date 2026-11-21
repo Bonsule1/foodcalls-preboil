@@ -1,7 +1,7 @@
 # Research: How much noodles/pasta should FoodCalls boil before each rush?
 
 **Place:** FoodCalls (pizza | burger | chowmein), near my college, Prayagraj
-**Person:** Navesh Gupta, owner of FoodCalls <!-- TODO: confirm spelling of name -->
+**Person:** Nivesh Gupta, owner of FoodCalls
 **Visited:** 20 Nov 2026, approx. 20:20 – 21:15
 
 ## The problem (5 lines)
@@ -12,7 +12,7 @@
 4. Boil too little and the after-class rush waits (only 18 seats, so slow tables mean turned-away customers); boil too much and it goes in the bin.
 5. Goal: a small tool that uses the shop's own sales per time slot to suggest how much to boil before each slot.
 
-## Existing solutions and why they don't fit Navesh ji
+## Existing solutions and why they don't fit Nivesh ji
 
 ### 1. Restaurant POS with inventory (e.g. Petpooja)
 <!-- TODO: write in your own words after reading their site -->
