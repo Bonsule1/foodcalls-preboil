@@ -6,3 +6,6 @@
 
 __pycache__/
 *.pyc
+
+# Original WhatsApp copies (renamed copies live in photos/)
+WhatsApp Image*
